@@ -12,6 +12,11 @@ namespace WpfApp1111
         {
             InitializeComponent();
         }
+        private void ManageProjects_Click(object sender, RoutedEventArgs e)
+        {
+            var projectListWindow = new ProjectListWindow();
+            projectListWindow.Show();
+        }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
@@ -37,7 +42,13 @@ namespace WpfApp1111
                 if (user != null)
                 {
                     MessageBox.Show("Успешный вход", "Информация");
-                    // Тут можно добавить дальнейшие действия после входа
+
+                    // Открываем окно управления проектами
+                    ProjectListWindow projectListWindow = new ProjectListWindow();
+                    projectListWindow.Show();
+
+                    // Закрываем текущее окно авторизации
+                    this.Close();
                 }
                 else
                 {
@@ -45,6 +56,7 @@ namespace WpfApp1111
                 }
             }
         }
+
 
         private void RegistrationButton_Click(object sender, RoutedEventArgs e)
         {

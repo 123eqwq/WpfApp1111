@@ -29,6 +29,7 @@
         <StackPanel Grid.Row="2" Grid.Column="1" VerticalAlignment="Top">
             <Button Content="Войти" Margin="5" Width="150" Click="LoginButton_Click"/>
             <Button Content="Регистрация" Margin="5" Width="150" Click="RegistrationButton_Click"/>
+
         </StackPanel>
     </Grid>
 </Window>

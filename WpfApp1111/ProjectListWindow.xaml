@@ -1,0 +1,14 @@
+﻿<Window x:Class="WpfApp1111.ProjectListWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Список проектов" Height="400" Width="500">
+    <Grid Margin="10">
+        <StackPanel>
+            <TextBlock Text="Список проектов" FontSize="18"
+                       FontWeight="Bold" HorizontalAlignment="Center"/>
+            <ListBox x:Name="ProjectsListBox" DisplayMemberPath="Name" Height="250" />
+            <Button Content="Добавить проект" Width="200" Height="30"
+                    Click="AddProjectButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
