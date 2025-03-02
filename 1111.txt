@@ -1,0 +1,17 @@
+1. приложение wpf майкрасофт
+cшарп windows рабочий стол
+2. добавить папку Entities и в нем класс User
+ и ApplicationDbContex в ПАПКЕ DatabaseContext
+
+3 пакеты нагетсов скачать чтобы код работал
+pomelo
+microsoft.entity 8.0.11
+microsoft.design 8.0.11
+microsoft.tools 8.0.11
+4.
+Add-Migration Init
+Update-Database
+5. 
+USE radel;
+select * from users;
+show tables;
